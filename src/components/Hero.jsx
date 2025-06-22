@@ -3,6 +3,9 @@
 import { Sphere, Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { useEffect } from "react";
+
+import { useRouter } from "next/navigation";
+
 import { FiArrowRight } from "react-icons/fi";
 import {
   useMotionTemplate,
@@ -15,6 +18,7 @@ import { Sphero } from "./Sparkletext";
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 export const AuroraHero = () => {
+  const router = useRouter();
   const color = useMotionValue(COLORS_TOP[0]);
 
   useEffect(() => {
@@ -29,7 +33,9 @@ export const AuroraHero = () => {
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
-
+  const handleClick = () => {
+    router.push("/chatbot");
+  };
   return (
     <motion.section
       style={{ backgroundImage }}
@@ -48,6 +54,7 @@ export const AuroraHero = () => {
           escalation—all without leaving your workflow.
         </p>
         <motion.button
+          onClick={handleClick}
           style={{ border, boxShadow }}
           whileHover={{ scale: 1.015 }}
           whileTap={{ scale: 0.985 }}

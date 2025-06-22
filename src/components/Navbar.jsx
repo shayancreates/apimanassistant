@@ -37,7 +37,6 @@ const Navbar = () => {
           APIMan
         </Link>
 
-        {/* Desktop Nav + Auth Buttons */}
         <div className="hidden md:flex items-center gap-6">
           {NAV_ITEMS.map((item) => (
             <Link
@@ -49,7 +48,6 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Clerk Auth Buttons inside nav */}
           <SignedOut>
             <div className="flex gap-2">
               <SignInButton>
@@ -70,7 +68,6 @@ const Navbar = () => {
           </SignedIn>
         </div>
 
-        {/* Mobile Toggle */}
         <button
           onClick={() => setMobileOpen(!isMobileOpen)}
           className="md:hidden text-white text-2xl"
@@ -80,7 +77,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileOpen && (
           <motion.div
@@ -100,7 +96,6 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Clerk Auth Buttons for mobile */}
             <SignedOut>
               <SignInButton>
                 <button
