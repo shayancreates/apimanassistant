@@ -50,12 +50,12 @@ const Navbar = () => {
 
           <SignedOut>
             <div className="flex gap-2">
-              <SignInButton path="/sign-in" routing="path" signUpUrl="/sign-up">
+              <SignInButton path="/sign-in" routing="path">
                 <button className="text-white border border-white rounded px-3 py-1 hover:bg-white hover:text-black transition">
                   Sign In
                 </button>
               </SignInButton>
-              <SignUpButton path="/sign-up" routing="path" signInUrl="/sign-in">
+              <SignUpButton path="/sign-up" routing="path">
                 <button className="text-white border border-blue-500 rounded px-3 py-1 hover:bg-blue-500 hover:text-white transition">
                   Sign Up
                 </button>
