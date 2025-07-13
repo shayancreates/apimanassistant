@@ -3,7 +3,7 @@ APIman is an intelligent support chatbot specifically designed for APIhub users,
 
 chatbot link: https://shayancreates-apiiman1-main-ritki9.streamlit.app/Chatbot
 
-Developed by: Socrates Team
+Developed by: Shayan Chakraborty as a part of Team Socrates
 
 For: APIhUB Hackathon
 
