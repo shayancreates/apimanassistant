@@ -10,7 +10,7 @@ Developed by: Shayan Chakraborty as a part of Team Socrates
 
 Demo video
 
-[![LinkedIn Post](./assets/post.png)](https://www.linkedin.com/feed/update/urn:li:ugcPost:7342979973449768960)
+[![LinkedIn Post](./src/assets/post.png)](https://www.linkedin.com/feed/update/urn:li:ugcPost:7342979973449768960)
 
 
 For: APIhUB Hackathon
